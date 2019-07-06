@@ -1,0 +1,30 @@
+{
+  "name": "gatsby-theme-documentation",
+  "version": "0.0.1",
+  "author": "John Otander",
+  "license": "MIT",
+  "dependencies": {
+    "@blocks/kit": "^0.0.20",
+    "@emotion/core": "^10.0.14",
+    "@mdx-js/mdx": "^1.0.21",
+    "@mdx-js/react": "^1.0.21",
+    "@theme-ui/presets": "^0.2.5",
+    "@theme-ui/prism": "^0.2.8",
+    "gatsby-plugin-mdx": "^1.0.7",
+    "gatsby-plugin-theme-ui": "^0.2.6",
+    "gatsby-source-filesystem": "^2.1.2",
+    "remark-emoji": "^2.0.2",
+    "remark-slug": "^5.1.2",
+    "theme-ui": "^0.2.6"
+  },
+  "devDependencies": {
+    "gatsby": "^2.13.6",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.13.6",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
