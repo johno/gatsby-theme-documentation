@@ -2,13 +2,19 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "start": "gatsby develop"
+    "start": "yarn workspace gatsby-starter-documentation start",
+    "build": "gatsby build",
+    "docs": "gatsby develop",
+    "now-build": "yarn build",
+    "publish": "lerna publish"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "examples/*"
   ],
   "dependencies": {
     "gatsby": "^2.13.6",
+    "lerna": "^3.15.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }
