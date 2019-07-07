@@ -4,6 +4,7 @@ import { jsx } from 'theme-ui'
 import { Sidenav } from '@theme-ui/sidenav'
 
 import NavLink from './nav-link'
+import Content from '../sidebar.mdx'
 
 export default React.forwardRef((props, ref) => (
   <Sidenav
@@ -20,5 +21,7 @@ export default React.forwardRef((props, ref) => (
       pb: 4,
       mt: [64, 0],
     }}
-  />
+  >
+    <Content />
+  </Sidenav>
 ))
