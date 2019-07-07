@@ -10,7 +10,7 @@ A minimalist Gatsby Theme for documentation sites built with
 - 💻 Syntax highlighting
 - 📰 MDX-based sidebar navigation
 - 🍔 Collapsible menu
-- 🛣 Automatic readme.md to index conversion
+- 🛣 Automatically turns readme.md files into the index of a directory
 
 ## Installation
 
