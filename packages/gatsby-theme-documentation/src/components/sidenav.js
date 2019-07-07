@@ -21,7 +21,5 @@ export default React.forwardRef((props, ref) => (
       pb: 4,
       mt: [64, 0],
     }}
-  >
-    <Content />
-  </Sidenav>
+  />
 ))

@@ -1,8 +1,6 @@
 const crypto = require(`crypto`)
 const path = require(`path`)
 
-const SIDEBAR_NAME = '_sidebar'
-
 let basePath
 let contentPath
 
@@ -129,10 +127,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const docs = result.data.docs.nodes
  
   docs.forEach((doc, index) => {
-    if (doc.slug === SIDEBAR_NAME) {
-      return
-    }
-
     const previous = index === docs.length - 1 ? null : docs[index + 1]
     const next = index === 0 ? null : docs[index - 1]
     const { slug } = doc

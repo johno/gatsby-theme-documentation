@@ -17,5 +17,6 @@
     "lerna": "^3.15.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
-  }
+  },
+  "name": "gatsby-theme-documentation"
 }
