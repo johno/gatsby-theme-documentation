@@ -47,7 +47,7 @@ In order to customize it you can shadow it by creating a file at
 
 Similarly to sidebar customization, you can also change the header content by
 writing MDX. You can shadow the default header by creating a file at
-`src/gatsby-theme-documentation/sidebar.mdx`
+`src/gatsby-theme-documentation/header.mdx`
 
 #### Example `header.mdx`
 
