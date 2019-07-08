@@ -12,8 +12,12 @@ export const pageQuery = graphql`
     doc: docs(id: { eq: $id }) {
       id
       title
-      body
+      description
       excerpt
+      body
+      headings {
+        value
+      }
     }
   }
 `
