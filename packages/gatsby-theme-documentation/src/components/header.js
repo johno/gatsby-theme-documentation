@@ -1,16 +1,37 @@
 /** @jsx jsx */
 import { jsx, Header, Container, Flex } from 'theme-ui'
+import { MDXProvider } from '@mdx-js/react'
 
 import MenuButton from './menu-button'
 import NavLink from './nav-link'
+import Content from '../header.mdx'
+
+const components = {
+  a: NavLink
+}
+
+const styles = {
+  alignItems: 'center',
+  width: '100%',
+  h1: {
+    m: 0
+  },
+  ul: {
+    ml: 'auto',
+    display: 'flex',
+    listStyleType: 'none',
+  },
+  li: {
+    ml: 3
+  }
+}
 
 export default ({ menuOpen, setMenuOpen, nav }) => {
-
   return (
     <Header>
       <Container>
         <Flex sx={{ justifyContent: 'space-between' }}>
-          <Flex sx={{ alignItems: 'center' }}>
+          <Flex sx={styles}>
             <MenuButton
               onClick={e => {
                 setMenuOpen(!menuOpen)
@@ -19,17 +40,9 @@ export default ({ menuOpen, setMenuOpen, nav }) => {
                 if (navLink) navLink.focus()
               }}
             />
-            <NavLink
-              to="/"
-              sx={{
-                color: 'text',
-                '&.active': {
-                  color: 'text',
-                }
-              }}
-            >
-              Docs
-            </NavLink>
+            <MDXProvider components={components}>
+              <Content />
+            </MDXProvider>
           </Flex>
         </Flex>
       </Container>
