@@ -29,6 +29,34 @@ module.exports = {
 }
 ```
 
+### Customizing the sidebar
+
+`gatsby-theme-documentation` uses a `sidebar.mdx` file to populate the navigation.
+In order to customize it you can shadow it by creating a file at
+`src/gatsby-theme-documentation/sidebar.mdx`.
+
+#### Example `sidebar.mdx`:
+
+```mdx
+- [Introduction](/introduction/)
+- [Getting Started](/getting-started/)
+- [GitHub](https://github.com/johno/gatsby-theme-documentation)
+```
+
+### Adding component shortcodes
+
+`src/gatsby-theme-documentation/components.js`
+```
+import baseComponents from 'gatsby-theme-documentation/src/components'
+
+import MyCustomH1 from '../components/my-custom-h1'
+
+export default {
+  ...baseComponents,
+  h1: MyCustomH1
+}
+```
+
 ### Docs schema
 
 This theme creates a `Docs` type which can be queried as
