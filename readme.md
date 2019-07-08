@@ -43,6 +43,21 @@ In order to customize it you can shadow it by creating a file at
 - [GitHub](https://github.com/johno/gatsby-theme-documentation)
 ```
 
+### Customizing the header
+
+Similarly to sidebar customization, you can also change the header content by
+writing MDX. You can shadow the default header by creating a file at
+`src/gatsby-theme-documentation/sidebar.mdx`
+
+#### Example `header.mdx`
+
+```mdx
+# ![Docs Logo](https://contrast.now.sh/white/black?width=80&height=40&text=DOCS)
+
+- [GitHub](https://github.com/johno/gatsby-theme-documentation)
+- [Twitter](https://twitter.com/4lpine)
+```
+
 ### Adding component shortcodes
 
 You can add shortcodes to your docs site which can be used throughout
