@@ -12,6 +12,7 @@
     "@theme-ui/prism": "^0.2.8",
     "@theme-ui/sidenav": "^0.2.8",
     "gatsby-plugin-mdx": "^1.0.7",
+    "gatsby-plugin-meta-redirect": "^1.1.1",
     "gatsby-plugin-theme-ui": "^0.2.6",
     "gatsby-source-filesystem": "^2.1.2",
     "is-absolute-url": "^3.0.0",

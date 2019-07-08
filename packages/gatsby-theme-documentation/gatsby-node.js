@@ -55,10 +55,20 @@ exports.sourceNodes = ({ actions, schema }) => {
 }
 
 exports.onCreateNode = ({ node, actions, getNode, createNodeId }) => {
-  const { createNode, createParentChildLink } = actions
+  const { createNode, createParentChildLink, createRedirect } = actions
 
-  const isIndexPath = name => name === 'index' || /readme/i.test(name)
+  const isReadme = name => /readme/i.test(name)
+  const isIndexPath = name => name === 'index' || isReadme(name)
 
+  const toOriginalDocsPath = node => {
+    const { dir } = path.parse(node.relativePath)
+    const fullPath = [
+      basePath,
+      dir,
+      node.name
+    ]
+    return path.join(...fullPath)
+  }
   const toDocsPath = node => {
     const { dir } = path.parse(node.relativePath)
     const fullPath = [
@@ -80,6 +90,17 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId }) => {
 
   if (node.internal.type === `Mdx` && source === contentPath) {
     const slug = toDocsPath(fileNode)
+
+    // Redirect file/path/readme to file/path/ in order to handle
+    // potential links that are meant to work with GitHub-style index
+    // pages.
+    if (isReadme(fileNode.name)) {
+      createRedirect({
+        from: toOriginalDocsPath(fileNode),
+        to: toDocsPath(fileNode),
+        isPermanent: true
+      })
+    }
 
     const fieldData = {
       title: node.frontmatter.title,

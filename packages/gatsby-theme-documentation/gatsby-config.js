@@ -3,6 +3,7 @@ module.exports = options => {
 
   return {
     plugins: [
+      'gatsby-plugin-meta-redirect',
       'gatsby-plugin-theme-ui',
       mdx && {
         resolve: 'gatsby-plugin-mdx',
