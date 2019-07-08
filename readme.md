@@ -52,7 +52,7 @@ in the root of your project: `src/gatsby-theme-documentation/components.js`.
 
 #### Example `components.js`
 
-```
+```js
 import baseComponents from 'gatsby-theme-documentation/src/components'
 
 import MyCustomH1 from '../components/my-custom-h1'
