@@ -5,6 +5,7 @@ module.exports = options => {
     plugins: [
       'gatsby-plugin-meta-redirect',
       'gatsby-plugin-theme-ui',
+      'gatsby-plugin-react-helmet',
       mdx && {
         resolve: 'gatsby-plugin-mdx',
         options: {

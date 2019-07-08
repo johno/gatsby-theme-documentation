@@ -44,6 +44,16 @@ exports.sourceNodes = ({ actions, schema }) => {
         slug: {
           type: `String!`,
         },
+        excerpt: {
+          type: `String!`,
+          args: {
+            pruneLength: {
+              type: `Int`,
+              defaultValue: 140,
+            },
+          },
+          resolve: mdxResolverPassthrough(`excerpt`),
+        },
         body: {
           type: `String!`,
           resolve: mdxResolverPassthrough(`body`),
@@ -102,10 +112,12 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId }) => {
       })
     }
 
-    const fieldData = {
-      title: node.frontmatter.title,
-      slug, 
-    }
+    // Seems like headings should always return an array but it doesn't?
+    const firstHeading = node.headings && node.headings[0] && node.headings[0].value
+    const title = node.frontmatter.title || firstHeading
+    const excerpt = node.frontmatter.description || node.excerpt
+
+    const fieldData = { title, excerpt, slug }
 
     createNode({
       ...fieldData,

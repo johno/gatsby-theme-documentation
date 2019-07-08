@@ -13,6 +13,7 @@ export const pageQuery = graphql`
       id
       title
       body
+      excerpt
     }
   }
 `
