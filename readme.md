@@ -10,7 +10,7 @@ A minimalist Gatsby Theme for documentation sites built with
 - 💻 Syntax highlighting
 - 📰 MDX-based sidebar navigation
 - 🍔 Collapsible menu
-- 🛣 Automatically turns readme.md files into the index of a directory
+- 🛣 [Automatic readme routing](#readme-routing)
 
 ## Installation
 
@@ -62,6 +62,14 @@ export default {
   h1: MyCustomH1
 }
 ```
+
+### Readme routing
+
+In order to get documents rendered in directories on GitHub, it's common
+to specify a `readme.md` similarly to the `index.html` on normal websites.
+Since this theme is meant to work seamlessly with docs directories on GitHub,
+`file/path/readme.md` will be automatically turned into `/file/path/index.html`
+in the built site. Links will also be redirected to support the new url scheme.
 
 ### Docs schema
 
