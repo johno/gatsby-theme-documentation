@@ -35,7 +35,7 @@ module.exports = {
 In order to customize it you can shadow it by creating a file at
 `src/gatsby-theme-documentation/sidebar.mdx`.
 
-#### Example `sidebar.mdx`:
+#### Example `sidebar.mdx`
 
 ```mdx
 - [Introduction](/introduction/)
@@ -45,7 +45,13 @@ In order to customize it you can shadow it by creating a file at
 
 ### Adding component shortcodes
 
-`src/gatsby-theme-documentation/components.js`
+You can add shortcodes to your docs site which can be used throughout
+your docs pages by extending the components passed to MDXProvider. You
+can do this by using component shadowing and creating the following file
+in the root of your project: `src/gatsby-theme-documentation/components.js`.
+
+#### Example `components.js`
+
 ```
 import baseComponents from 'gatsby-theme-documentation/src/components'
 
