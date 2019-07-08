@@ -3,6 +3,12 @@
   "version": "0.0.6",
   "author": "John Otander",
   "license": "MIT",
+  "repository": "johno/gatsby-theme-documentation",
+  "keywords": [
+    "gatsby",
+    "gatsby-theme",
+    "gatsby-plugin"
+  ],
   "dependencies": {
     "@blocks/kit": "^0.0.20",
     "@emotion/core": "^10.0.14",
