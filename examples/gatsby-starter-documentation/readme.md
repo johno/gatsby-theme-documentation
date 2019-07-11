@@ -8,7 +8,8 @@ A minimalist starter for
 ## Installation
 
 ```sh
-yarn
+gatsby new my-docs-site johno/gatsby-starter-documentation
+cd my-docs-site
 ```
 
 ## Usage
