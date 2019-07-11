@@ -107,8 +107,8 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId }) => {
     // pages.
     if (isReadme(fileNode.name)) {
       createRedirect({
-        from: toOriginalDocsPath(fileNode),
-        to: toDocsPath(fileNode),
+        fromPath: toOriginalDocsPath(fileNode),
+        toPath: toDocsPath(fileNode),
         isPermanent: true
       })
     }

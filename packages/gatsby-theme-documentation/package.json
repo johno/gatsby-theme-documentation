@@ -19,6 +19,7 @@
     "gatsby-plugin-mdx": "^1.0.7",
     "gatsby-plugin-meta-redirect": "^1.1.1",
     "gatsby-plugin-react-helmet": "^3.1.0",
+    "gatsby-plugin-redirects": "^1.0.0",
     "gatsby-plugin-theme-ui": "^0.2.6",
     "gatsby-source-filesystem": "^2.1.2",
     "is-absolute-url": "^3.0.0",
