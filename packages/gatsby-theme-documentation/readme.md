@@ -24,6 +24,7 @@ Name | Command
 ---- | -------
 [Base](https://github.com/johno/gatsby-starter-documentation) | `gatsby new johno/gatsby-starter-documentation`
 [Dark](https://github.com/johno/gatsby-starter-documentation-dark) | `gatsby new johno/gatsby-starter-documentation-dark`
+[Tomato](https://github.com/johno/gatsby-starter-documentation-tomato) | `gatsby new johno/gatsby-starter-documentation-tomato`
 
 ## Usage
 
