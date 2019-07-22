@@ -1,7 +1,7 @@
 {
 	"private": false,
 	"name": "snap-docs",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"scripts": {
 		"start": "yarn workspace gatsby-starter-documentation start",
 		"build": "gatsby build",
