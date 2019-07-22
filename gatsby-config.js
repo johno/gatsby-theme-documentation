@@ -1,6 +1,8 @@
 module.exports = {
-	siteMetadata: {
-		title: 'snap-docs',
-	},
-	plugins: ['gatsby-theme-documentation'],
+  siteMetadata: {
+    title: 'gatsby-theme-documentation'
+  },
+  plugins: [
+    'gatsby-theme-documentation'
+  ]
 }

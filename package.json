@@ -1,22 +1,22 @@
 {
-	"private": false,
-	"name": "snap-docs",
-	"version": "0.0.4",
-	"scripts": {
-		"start": "yarn workspace gatsby-starter-documentation start",
-		"build": "gatsby build",
-		"docs": "gatsby develop",
-		"now-build": "yarn build",
-		"publish": "lerna publish"
-	},
-	"workspaces": [
-		"packages/*",
-		"examples/*"
-	],
-	"dependencies": {
-		"gatsby": "^2.13.9",
-		"lerna": "^3.15.0",
-		"react": "^16.8.6",
-		"react-dom": "^16.8.6"
-	}
+  "private": true,
+  "name": "gatsby-theme-documentation",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "yarn workspace gatsby-starter-documentation start",
+    "build": "gatsby build",
+    "docs": "gatsby develop",
+    "now-build": "yarn build",
+    "publish": "lerna publish"
+  },
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "dependencies": {
+    "gatsby": "^2.13.9",
+    "lerna": "^3.15.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
 }

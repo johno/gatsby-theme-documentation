@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "gatsby-starter-documentation-tomato",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "gatsby": "^2.13.18",
+    "gatsby-theme-documentation": "*",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}

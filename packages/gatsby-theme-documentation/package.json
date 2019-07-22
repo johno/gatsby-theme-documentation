@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-documentation",
-  "version": "0.0.5",
+  "version": "0.0.18",
   "author": "John Otander",
   "license": "MIT",
   "repository": "johno/gatsby-theme-documentation",
@@ -18,7 +18,6 @@
     "@theme-ui/sidenav": "^0.2.13",
     "gatsby-plugin-mdx": "^1.0.12",
     "gatsby-plugin-meta-redirect": "^1.1.1",
-    "gatsby-plugin-prefetch-google-fonts": "^1.4.2",
     "gatsby-plugin-react-helmet": "^3.1.2",
     "gatsby-plugin-redirects": "^1.0.0",
     "gatsby-plugin-theme-ui": "^0.2.6",
