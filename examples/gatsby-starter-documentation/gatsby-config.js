@@ -1,9 +1,7 @@
 module.exports = {
-  siteMetadata: {
-    title: 'Gatsby Documentation Starter',
-    description: 'This is a starter for gatsby-theme-documentation'
-  },
-  plugins: [
-    'gatsby-theme-documentation'
-  ]
+	siteMetadata: {
+		title: 'Flow Docs',
+		description: 'Docs for the Flow package on the Framer X Store.',
+	},
+	plugins: ['gatsby-theme-documentation'],
 }

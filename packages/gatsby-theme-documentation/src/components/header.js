@@ -43,7 +43,7 @@ export default ({ menuOpen, setMenuOpen, nav }) => {
 					backgroundColor: '#FFFFFF',
 				}}
 			>
-				<Flex sx={{ justifyContent: 'space-between', pt: [1, 3], px: [3, 0] }}>
+				<Flex sx={{ justifyContent: 'space-between', pt: [1, 2], px: [3, 0] }}>
 					<Flex sx={styles}>
 						<MenuButton
 							sx={{ mr: 2 }}

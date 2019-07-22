@@ -1,17 +1,18 @@
 {
-  "private": true,
-  "name": "gatsby-starter-documentation",
-  "version": "0.0.1",
-  "scripts": {
-    "start": "gatsby develop",
-    "build": "gatsby build"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "gatsby": "^2.13.18",
-    "gatsby-plugin-prefetch-google-fonts": "^1.4.2",
-    "gatsby-theme-documentation": "*",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  }
+	"private": true,
+	"name": "framer-x-flow-documentation",
+	"author": "steveruizok",
+	"version": "0.0.1",
+	"scripts": {
+		"start": "gatsby develop",
+		"build": "gatsby build"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"gatsby": "^2.13.18",
+		"gatsby-plugin-prefetch-google-fonts": "^1.4.2",
+		"gatsby-theme-documentation": "*",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6"
+	}
 }

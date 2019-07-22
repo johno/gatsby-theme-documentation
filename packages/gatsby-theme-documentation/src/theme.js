@@ -98,14 +98,18 @@ export default {
 			},
 		},
 		code: {
-			fontFamily: 'textStyles.monospace',
+			fontFamily: 'monospace',
 			color: '#666',
 			fontSize: 1,
 		},
 		inlineCode: {
-			fontFamily: 'textStyles.monospace',
-			color: '#666',
+			fontSize: 1,
+			fontFamily: 'monospace',
+			color: '#2d2d2d',
 			bg: '#fdfdfd',
+			border: '1px solid #efefef',
+			px: 1,
+			borderRadius: 4,
 		},
 		table: {
 			width: '100%',
@@ -133,6 +137,12 @@ export default {
 			border: 0,
 			borderBottom: '1px solid',
 			borderColor: 'muted',
+		},
+		li: {
+			my: 1,
+		},
+		p: {
+			mb: 3,
 		},
 	},
 	prism: {
