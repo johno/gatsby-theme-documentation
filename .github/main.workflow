@@ -44,16 +44,16 @@ action "site:alias" {
 
 workflow "Test" {
   on = "push"
-  resolves = ["johno/actions-yarn@master-1"]
+  resolves = ["test"]
 }
 
-action "johno/actions-yarn@master" {
+action "install" {
   uses = "johno/actions-yarn@master"
   args = "install"
 }
 
-action "johno/actions-yarn@master-1" {
+action "test" {
   uses = "johno/actions-yarn@master"
-  needs = ["johno/actions-yarn@master"]
+  needs = ["install"]
   args = "test"
 }
