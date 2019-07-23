@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "alias": ["gatsby-theme-documentation.johno.com"],
+  "alias": ["docs-theme.johno.com"],
   "builds": [
     {
       "src": "package.json",
@@ -11,4 +11,3 @@
     }
   ]
 }
-
