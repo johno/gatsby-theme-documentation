@@ -1,0 +1,81 @@
+# Customizing
+
+The primary way for customizing this Gatsby
+Theme is using
+[component shadowing](https://www.gatsbyjs.org/docs/themes/api-reference#component-shadowing).
+
+The sidebar, header, and theme are the main intended
+aspects to be customized. However, you can essentially change
+anything.
+
+## Customizing the theme
+
+`gatsby-theme-documentation` uses a `theme.js` file to populate the
+theme values. You can shadow the file at
+`src/gatsby-theme-documentation/theme.js`.
+
+```js
+// src/gatsby-theme-documentation/theme.js
+import baseTheme from 'gatsby-theme-documentation/src/theme'
+
+export default {
+  ...baseTheme,
+  colors: {
+    ...baseTheme.colors,
+    text: '#111',
+    background: '#fff'
+  }
+}
+```
+
+For a full explainer on theming you can
+[see the Theme UI docs](https://theme-ui.com/).
+
+## Customizing the sidebar
+
+`gatsby-theme-documentation` uses a `sidebar.mdx` file to populate the navigation.
+In order to customize it you can shadow it by creating a file at
+`src/gatsby-theme-documentation/sidebar.mdx`.
+
+#### Example `sidebar.mdx`
+
+```mdx
+- [Introduction](/introduction/)
+- [Getting Started](/getting-started/)
+- [GitHub](https://github.com/johno/gatsby-theme-documentation)
+```
+
+## Customizing the header
+
+Similarly to sidebar customization, you can also change the header content by
+writing MDX. You can shadow the default header by creating a file at
+`src/gatsby-theme-documentation/header.mdx`
+
+#### Example `header.mdx`
+
+```mdx
+# ![Docs Logo](https://contrast.now.sh/white/black?width=80&height=40&text=DOCS)
+
+- [GitHub](https://github.com/johno/gatsby-theme-documentation)
+- [Twitter](https://twitter.com/4lpine)
+```
+
+## Adding component shortcodes
+
+You can add shortcodes to your docs site which can be used throughout
+your docs pages by extending the components passed to MDXProvider. You
+can do this by using component shadowing and creating the following file
+in the root of your project: `src/gatsby-theme-documentation/components.js`.
+
+#### Example `components.js`
+
+```js
+import baseComponents from 'gatsby-theme-documentation/src/components'
+
+import MyCustomH1 from '../components/my-custom-h1'
+
+export default {
+  ...baseComponents,
+  h1: MyCustomH1
+}
+```

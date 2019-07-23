@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "alias": ["gatsby-theme-documentation.johno.com"],
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    }
+  ]
+}
+

@@ -111,10 +111,16 @@ export default {
         color: 'secondary',
       },
     },
+    p: {
+      fontSize: [3, 4, 4]
+    },
+    li: {
+      fontSize: [3, 4, 4]
+    },
     pre: {
       variant: 'prism',
       fontFamily: 'monospace',
-      fontSize: 1,
+      fontSize: 3,
       p: 3,
       color: 'text',
       bg: 'muted',
@@ -126,7 +132,7 @@ export default {
     code: {
       fontFamily: 'monospace',
       color: 'secondary',
-      fontSize: 1,
+      fontSize: 3,
     },
     inlineCode: {
       fontFamily: 'monospace',
@@ -136,6 +142,7 @@ export default {
     table: {
       width: '100%',
       my: 4,
+      fontSize: 3,
       borderCollapse: 'separate',
       borderSpacing: 0,
       [['th', 'td']]: {

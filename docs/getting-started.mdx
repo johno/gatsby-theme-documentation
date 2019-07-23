@@ -1,0 +1,40 @@
+# Getting Started
+
+With this theme you can install it as a starter for a new project,
+or add it to an existing Gatsby site.
+
+## Starters
+
+The easiest way to get started with `gatsby-theme-documentation` is
+to use one of the provided starters. They come with a pre-built theme
+and starter content which you can edit and get going.
+
+Name | Command
+---- | -------
+[Base](https://github.com/johno/gatsby-starter-documentation) | `gatsby new johno/gatsby-starter-documentation`
+[Dark](https://github.com/johno/gatsby-starter-documentation-dark) | `gatsby new johno/gatsby-starter-documentation-dark`
+[Tomato](https://github.com/johno/gatsby-starter-documentation-tomato) | `gatsby new johno/gatsby-starter-documentation-tomato`
+
+## Installation
+
+If you have an existing site you'd like to add the theme to, you
+can install the theme and then specify the `basePath`.
+
+```
+yarn add gatsby-theme-documentation
+```
+
+### Set the `basePath`
+
+```js
+// gatsby-config.js
+module.exports = {
+  plugins: [
+    {
+      resolve: 'gatsby-theme-documentation',
+      options: {
+        basePath: '/docs'
+      }
+  ]
+}
+```
