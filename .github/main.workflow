@@ -1,6 +1,9 @@
-workflow "Publish starter" {
+workflow "Publish packages and starters" {
+  resolves = [
+    "master",
+    "yarn:publish:ci",
+  ]
   on = "push"
-  resolves = ["push-subdirectories"]
 }
 
 action "master" {
@@ -16,4 +19,11 @@ action "push-subdirectories" {
     "GITHUB_TOKEN",
     "API_TOKEN_GITHUB",
   ]
+}
+
+action "yarn:publish:ci" {
+  uses = "johno/actions-yarn@master"
+  needs = ["push-subdirectories"]
+  runs = "publish:ci"
+  secrets = ["NPM_AUTH_TOKEN"]
 }
