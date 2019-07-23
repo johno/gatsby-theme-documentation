@@ -41,3 +41,19 @@ action "site:alias" {
   secrets = ["ZEIT_TOKEN"]
   needs = ["site:publish"]
 }
+
+workflow "Test" {
+  on = "push"
+  resolves = ["johno/actions-yarn@master-1"]
+}
+
+action "johno/actions-yarn@master" {
+  uses = "johno/actions-yarn@master"
+  args = "install"
+}
+
+action "johno/actions-yarn@master-1" {
+  uses = "johno/actions-yarn@master"
+  needs = ["johno/actions-yarn@master"]
+  args = "test"
+}
