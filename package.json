@@ -7,7 +7,8 @@
     "build": "gatsby build",
     "docs": "gatsby develop",
     "now-build": "yarn build",
-    "publish": "lerna publish"
+    "publish": "lerna publish",
+    "publish:ci": "lerna publish -y --force-publish=*"
   },
   "workspaces": [
     "packages/*",
