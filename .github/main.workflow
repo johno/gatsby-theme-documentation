@@ -23,7 +23,7 @@ action "starters:publish" {
 
 action "yarn:publish:ci" {
   uses = "johno/actions-yarn@master"
-  runs = "publish:ci"
+  args = "publish:ci"
   secrets = ["NPM_AUTH_TOKEN"]
   needs = ["starters:publish"]
 }
