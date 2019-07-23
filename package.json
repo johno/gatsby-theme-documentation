@@ -8,7 +8,7 @@
     "docs": "gatsby develop",
     "now-build": "yarn build",
     "publish": "lerna publish",
-    "publish:ci": "lerna publish -y --canary --preid ci --npm-tag=ci --force-publish=*"
+    "publish:ci": "lerna publish -y --canary --preid ci --dist-tag=ci --force-publish=*"
   },
   "workspaces": [
     "packages/*",
