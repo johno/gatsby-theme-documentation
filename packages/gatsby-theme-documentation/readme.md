@@ -1,16 +1,25 @@
 # gatsby-theme-documentation
 
-A minimalist Gatsby Theme for documentation sites built with
-[MDX](https://mdxjs.com) and [Theme UI](https://theme-ui.com).
+A minimalist [Gatsby Theme](https://gatsbyjs.org/docs/themes)
+for documentation sites built with [MDX](https://mdxjs.com)
+and [Theme UI](https://theme-ui.com).
+
+Get up and running in seconds with a beautiful docs site so
+you can do what's more important: **write docs**.
+
+![image](https://user-images.githubusercontent.com/1424573/61085901-ace8e980-a3ee-11e9-84d2-45acbb200fea.png)
 
 ## Features
 
-- 📑 MDX
+- 📑 MDX files for JSX in Markdown
 - 🎨 Theme UI-based theming
 - 💻 Syntax highlighting
-- 📰 MDX-based sidebar navigation
-- 🍔 Collapsible menu
+- 📰 [MDX-based sidebar navigation](#customizing-the-sidebar)
 - 🛣 [Automatic readme routing](#readme-routing)
+- 🧩 [Shortcode support with React components](#shortcodes)
+- 🍔 Collapsible menu
+- 📱 Mobile friendly
+- 🎣 [Custom docs schema](#docs-schema)
 
 ## Installation
 
@@ -25,6 +34,8 @@ Name | Command
 [Base](https://github.com/johno/gatsby-starter-documentation) | `gatsby new johno/gatsby-starter-documentation`
 [Dark](https://github.com/johno/gatsby-starter-documentation-dark) | `gatsby new johno/gatsby-starter-documentation-dark`
 [Tomato](https://github.com/johno/gatsby-starter-documentation-tomato) | `gatsby new johno/gatsby-starter-documentation-tomato`
+
+[Read the full setup guide](https://johno.com/creating-a-minimalist-docs-site-with-gatsby-and-mdx)
 
 ## Usage
 
