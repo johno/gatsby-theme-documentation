@@ -4,7 +4,8 @@
   "version": "0.0.1",
   "scripts": {
     "start": "gatsby develop",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "now-build": "yarn build"
   },
   "license": "MIT",
   "dependencies": {
