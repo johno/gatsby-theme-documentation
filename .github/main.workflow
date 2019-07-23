@@ -1,7 +1,6 @@
 workflow "Publish packages and starters" {
   resolves = [
     "yarn:publish:ci",
-    "site:alias",
   ]
   on = "push"
 }
@@ -26,20 +25,6 @@ action "yarn:publish:ci" {
   args = "publish:ci"
   secrets = ["NPM_AUTH_TOKEN"]
   needs = ["starters:publish"]
-}
-
-action "site:publish" {
-  uses = "actions/zeit-now@5c51b26db987d15a0133e4c760924896b4f1512f"
-  needs = ["master"]
-  secrets = ["ZEIT_TOKEN"]
-  args = "--public --no-clipboard > $HOME/ZEIT.txt"
-}
-
-action "site:alias" {
-  uses = "actions/zeit-now@5c51b26db987d15a0133e4c760924896b4f1512f"
-  args = "alias"
-  secrets = ["ZEIT_TOKEN"]
-  needs = ["site:publish"]
 }
 
 workflow "Test" {
