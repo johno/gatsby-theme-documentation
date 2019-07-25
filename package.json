@@ -17,7 +17,7 @@
   ],
   "dependencies": {
     "gatsby": "2.13.18",
-    "lerna": "3.15.0",
+    "lerna": "3.16.4",
     "react": "16.8.6",
     "react-dom": "16.8.6"
   }
