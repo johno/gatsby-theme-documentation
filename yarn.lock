@@ -5931,10 +5931,10 @@ gatsby-plugin-redirects@1.0.0:
   dependencies:
     gatsby-plugin-meta-redirect "^1.1.1"
 
-gatsby-plugin-theme-ui@0.2.18:
-  version "0.2.18"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.2.18.tgz#0fc30f6140f006389be1a72b1734362f5df08f79"
-  integrity sha512-BJp6oCdkyjNbqBBpGenvkbfWrLgL+tnUEVvY+2x72/FBzYTr7OBUSv6VFlIYTSTGJZxDJN8JOG0JdubMbbGPpw==
+gatsby-plugin-theme-ui@0.2.25:
+  version "0.2.25"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.2.25.tgz#57b26c3adf5e399593444517d3e50308729ed384"
+  integrity sha512-yEmxgHdF3o/txiEXLJBcHByukF8ECq6hVYQNcx8AR9OWefw1WI5as136qc7L4Ue9BBgtP95igr/DpPcQp+1Gog==
 
 gatsby-react-router-scroll@^2.1.3:
   version "2.1.3"
