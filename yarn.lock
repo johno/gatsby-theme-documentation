@@ -1952,10 +1952,10 @@
     "@theme-ui/preset-system" "^0.2.25"
     "@theme-ui/preset-tailwind" "^0.2.25"
 
-"@theme-ui/prism@0.2.23":
-  version "0.2.23"
-  resolved "https://registry.yarnpkg.com/@theme-ui/prism/-/prism-0.2.23.tgz#afadccc2c830fa6fbe78739590034d94b7ca67af"
-  integrity sha512-+YpfzeHZhNMVTr4esgJWyDonCK2bTZjlNYyMV+Snim9KAwZ3JPE3W8OcHnagjMTWrE8etapwveauaLFBE3+RLw==
+"@theme-ui/prism@0.2.25":
+  version "0.2.25"
+  resolved "https://registry.yarnpkg.com/@theme-ui/prism/-/prism-0.2.25.tgz#5fa6a1a39b2826b509e0064b390bd0a8f910f9bd"
+  integrity sha512-uS41Vh3sbaZuJFysUevy3oOmhmTZ5+8wdU/SYXzAF0B7axPoHvAraC3bhVos3RWT6Zzsigis1w2RkGHQizwzlw==
   dependencies:
     prism-react-renderer "^0.1.7"
 
