@@ -1,10 +1,13 @@
 /** @jsx jsx */
-import { jsx, Header, Container, Flex } from 'theme-ui'
+import { jsx, Header, Container, Flex, useColorMode } from 'theme-ui'
 import { MDXProvider } from '@mdx-js/react'
 
 import MenuButton from './menu-button'
 import NavLink from './nav-link'
 import Content from '../header.mdx'
+import Button from './button'
+
+const modes = ['light', 'dark', 'deep', 'swiss']
 
 const components = {
   a: NavLink
@@ -27,6 +30,14 @@ const styles = {
 }
 
 export default ({ menuOpen, setMenuOpen, nav }) => {
+  const [mode, setMode] = useColorMode()
+
+  const cycleMode = e => {
+    const i = modes.indexOf(mode)
+    const next = modes[(i + 1) % modes.length]
+    setMode(next)
+  }
+
   return (
     <Header>
       <Container>
@@ -43,6 +54,13 @@ export default ({ menuOpen, setMenuOpen, nav }) => {
             <MDXProvider components={components}>
               <Content />
             </MDXProvider>
+            <Button
+              sx={{
+                ml: 2,
+              }}
+              onClick={cycleMode}>
+              {mode}
+            </Button>
           </Flex>
         </Flex>
       </Container>
