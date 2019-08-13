@@ -78,7 +78,7 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId }) => {
       dir,
       node.name
     ]
-    return path.join(...fullPath)
+    return path.join(...fullPath).replace(/\\+/g, ``)
   }
   const toDocsPath = node => {
     const { dir } = path.parse(node.relativePath)
@@ -87,7 +87,7 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId }) => {
       dir,
       !isIndexPath(node.name) && node.name
     ].filter(Boolean)
-    return path.join(...fullPath)
+    return path.join(...fullPath).replace(/\\+/g, ``)
   }
 
   // Make sure it's an MDX node
