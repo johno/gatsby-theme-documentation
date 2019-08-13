@@ -2009,16 +2009,16 @@
   dependencies:
     prism-react-renderer "^0.1.7"
 
-"@theme-ui/sidenav@0.2.32":
-  version "0.2.32"
-  resolved "https://registry.yarnpkg.com/@theme-ui/sidenav/-/sidenav-0.2.32.tgz#4868111bd8617717a6e99f69343adfd9794c44c8"
-  integrity sha512-WP8t6/fDWEoXbKQQfgliSFCjCkPgKWI8iUGlhaEJBFtf+7cyvQdoPL+Uvodsza7Gjekru8/c2bmuennDTfn3pA==
+"@theme-ui/sidenav@0.2.33":
+  version "0.2.33"
+  resolved "https://registry.yarnpkg.com/@theme-ui/sidenav/-/sidenav-0.2.33.tgz#a0bef065b0a22574194f486dce0407ea461784a8"
+  integrity sha512-y43jsApeUsWJqpUKWj0B/VbHSkH7I2UZSu4+QqEwyrGf6mxldJKkaQ+o1yY+zo4Joeo9EZc9MCzUILxCD3RwNg==
   dependencies:
     "@emotion/core" "^10.0.14"
     "@mdx-js/react" "^1.0.21"
-    deepmerge "^3.3.0"
+    deepmerge "^4.0.0"
     react "^16.8.6"
-    theme-ui "^0.2.31"
+    theme-ui "^0.2.33"
 
 "@types/configstore@^2.1.1":
   version "2.1.1"
@@ -4597,11 +4597,6 @@ deepmerge@4.0.0, deepmerge@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.0.0.tgz#3e3110ca29205f120d7cb064960a39c3d2087c09"
   integrity sha512-YZ1rOP5+kHor4hMAH+HRQnBQHg+wvS1un1hAOuIcxcBy0hzcUf6Jg2a1w65kpoOUnurOfZbERwjI1TfZxNjcww==
-
-deepmerge@^3.2.0, deepmerge@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-3.3.0.tgz#d3c47fd6f3a93d517b14426b0628a17b0125f5f7"
-  integrity sha512-GRQOafGHwMHpjPx9iCvTgpu9NojZ49q794EEL94JVEw6VaeA8XTUyBKvAkOOjBX9oJNiV6G3P+T+tihFjo2TqA==
 
 default-gateway@^4.2.0:
   version "4.2.0"
@@ -12601,7 +12596,7 @@ text-table@0.2.0, text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
-theme-ui@0.2.33:
+theme-ui@0.2.33, theme-ui@^0.2.33:
   version "0.2.33"
   resolved "https://registry.yarnpkg.com/theme-ui/-/theme-ui-0.2.33.tgz#610a0b7dc323f3bb2f2130e35cd5bc9c9e2f7d7e"
   integrity sha512-JbMW96T7vkytFp5i+N1HNm7iYQKyY7I+/dkCU71Vo3K36CT1OLapVTRa89ZWCEZpou8E8fSd4Veg+Q4p3N9/Gg==
@@ -12609,16 +12604,6 @@ theme-ui@0.2.33:
     "@emotion/is-prop-valid" "^0.8.1"
     "@styled-system/css" "^5.0.16"
     deepmerge "^4.0.0"
-    react "^16.8.0"
-
-theme-ui@^0.2.31:
-  version "0.2.31"
-  resolved "https://registry.yarnpkg.com/theme-ui/-/theme-ui-0.2.31.tgz#c3a1398b77f36f4a573ca06554504cf92fc18e36"
-  integrity sha512-f+0hoqjecTRKEvpOobSu0Yz/mbLDYmdG8X/DpOu+rqIfgm/pH36jaB6X+wO2Zdu4KUMo0fQ49ksuCalc/8GdIw==
-  dependencies:
-    "@emotion/is-prop-valid" "^0.8.1"
-    "@styled-system/css" "^5.0.16"
-    deepmerge "^3.2.0"
     react "^16.8.0"
 
 thenify-all@^1.0.0:
