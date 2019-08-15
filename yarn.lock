@@ -2009,16 +2009,16 @@
   dependencies:
     prism-react-renderer "^0.1.7"
 
-"@theme-ui/sidenav@0.2.33":
-  version "0.2.33"
-  resolved "https://registry.yarnpkg.com/@theme-ui/sidenav/-/sidenav-0.2.33.tgz#a0bef065b0a22574194f486dce0407ea461784a8"
-  integrity sha512-y43jsApeUsWJqpUKWj0B/VbHSkH7I2UZSu4+QqEwyrGf6mxldJKkaQ+o1yY+zo4Joeo9EZc9MCzUILxCD3RwNg==
+"@theme-ui/sidenav@0.2.35":
+  version "0.2.35"
+  resolved "https://registry.yarnpkg.com/@theme-ui/sidenav/-/sidenav-0.2.35.tgz#117c5ed471ad9eb351857fbbf9bb981645fd6359"
+  integrity sha512-lAveQVZ0lQGPTohFYFRA7bhGL9QwDPNBCjiR3Ik4jbYLyR5fSYTHtYMsnObFGxvrA3BRpJt9SHioS8MUIA5R8Q==
   dependencies:
     "@emotion/core" "^10.0.14"
     "@mdx-js/react" "^1.0.21"
     deepmerge "^4.0.0"
     react "^16.8.6"
-    theme-ui "^0.2.33"
+    theme-ui "^0.2.35"
 
 "@types/configstore@^2.1.1":
   version "2.1.1"
@@ -12596,10 +12596,20 @@ text-table@0.2.0, text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
-theme-ui@0.2.33, theme-ui@^0.2.33:
+theme-ui@0.2.33:
   version "0.2.33"
   resolved "https://registry.yarnpkg.com/theme-ui/-/theme-ui-0.2.33.tgz#610a0b7dc323f3bb2f2130e35cd5bc9c9e2f7d7e"
   integrity sha512-JbMW96T7vkytFp5i+N1HNm7iYQKyY7I+/dkCU71Vo3K36CT1OLapVTRa89ZWCEZpou8E8fSd4Veg+Q4p3N9/Gg==
+  dependencies:
+    "@emotion/is-prop-valid" "^0.8.1"
+    "@styled-system/css" "^5.0.16"
+    deepmerge "^4.0.0"
+    react "^16.8.0"
+
+theme-ui@^0.2.35:
+  version "0.2.35"
+  resolved "https://registry.yarnpkg.com/theme-ui/-/theme-ui-0.2.35.tgz#6f953086878e2746298f38272e8cbb6344d3acff"
+  integrity sha512-NJJEtnLogIULuwL/dF15kfv+97ZR/rWFLccrR60iGCj6j8hk4krqO+g573hV4bowDorCFPA4yQb0HHZbm+1P1g==
   dependencies:
     "@emotion/is-prop-valid" "^0.8.1"
     "@styled-system/css" "^5.0.16"
