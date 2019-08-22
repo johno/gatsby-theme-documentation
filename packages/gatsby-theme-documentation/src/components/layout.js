@@ -43,6 +43,7 @@ export default ({ children }) => {
               <div
                 sx={{
                   overflow: 'hidden',
+                  px: 3,
                 }}
               >
                 {children}
