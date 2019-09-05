@@ -1,5 +1,6 @@
 const crypto = require(`crypto`)
 const path = require(`path`)
+const { joinPath } = require(`gatsby-core-utils`)
 
 let basePath
 let contentPath
@@ -78,7 +79,7 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId }) => {
       dir,
       node.name
     ]
-    return path.join(...fullPath).replace(/\\+/g, ``)
+    return joinPath(...fullPath).replace(/\\+/g, ``)
   }
   const toDocsPath = node => {
     const { dir } = path.parse(node.relativePath)
@@ -87,7 +88,7 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId }) => {
       dir,
       !isIndexPath(node.name) && node.name
     ].filter(Boolean)
-    return path.join(...fullPath).replace(/\\+/g, ``)
+    return joinPath(...fullPath).replace(/\\+/g, ``)
   }
 
   // Make sure it's an MDX node
@@ -146,7 +147,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       docs: allDocs {
         nodes {
           id
-          slug 
+          slug
         }
       }
     }
@@ -157,7 +158,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   const docs = result.data.docs.nodes
- 
+
   docs.forEach((doc, index) => {
     const previous = index === docs.length - 1 ? null : docs[index + 1]
     const next = index === 0 ? null : docs[index - 1]
