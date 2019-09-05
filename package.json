@@ -5,6 +5,7 @@
   "scripts": {
     "start": "yarn workspace gatsby-starter-documentation start",
     "build": "gatsby build",
+    "clean": "gatsby clean",
     "docs": "gatsby develop",
     "now-build": "yarn build",
     "publish": "lerna publish",
