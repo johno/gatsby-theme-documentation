@@ -2264,20 +2264,20 @@
   resolved "https://registry.yarnpkg.com/@theme-ui/preset-system/-/preset-system-0.2.40.tgz#a84c1589cd37b33fffd8c7c46dfcbf5a8556a3fc"
   integrity sha512-AI321YIipLM6++6ligmSaAFiBwaWFJWLyHZk5ma415hn2neYddQ5vXeBI7P4Tfhx208qg2ete5qGWM+Q7KA3Sw==
 
-"@theme-ui/preset-tailwind@^0.2.40":
-  version "0.2.40"
-  resolved "https://registry.yarnpkg.com/@theme-ui/preset-tailwind/-/preset-tailwind-0.2.40.tgz#8c23e7af9e2fbe0ce14d0df50106f145a3f8909f"
-  integrity sha512-K+HcinKxXLFkq2Tyrr/WUqTLNNAVqTeeGI0HXGpSVzQLHvU0OlAO3pDdfr1dQybiucfoZpoowk5wYHKLLbkpxg==
+"@theme-ui/preset-tailwind@^0.2.42":
+  version "0.2.42"
+  resolved "https://registry.yarnpkg.com/@theme-ui/preset-tailwind/-/preset-tailwind-0.2.42.tgz#00e009827da2ffea628fa5b89002cd8cb6db805f"
+  integrity sha512-giQQ0xoGB2btWvLlg9GQSyRiQ6vGCpVF+uf5OxU5TJt2DGyuYckxvlG3za93o80cxHnVlm5YyO2sLNzXyQSi0w==
 
 "@theme-ui/preset-tosh@^0.2.40":
   version "0.2.40"
   resolved "https://registry.yarnpkg.com/@theme-ui/preset-tosh/-/preset-tosh-0.2.40.tgz#68cf4ed5e4c748e7c1762676ddb6119653679ac1"
   integrity sha512-LatVzEDlVR1pqyn9u+i4ZcZrdfWx0Hvd7ktNGLrA89RD9IX7hDHdvsr0wI6z6nrPtTNoa41YZe7xU8QzgwnpCg==
 
-"@theme-ui/presets@0.2.40":
-  version "0.2.40"
-  resolved "https://registry.yarnpkg.com/@theme-ui/presets/-/presets-0.2.40.tgz#a70b1c5c9c188582dd8f01c86bf616cefaa9d5c8"
-  integrity sha512-EQAEqujq1gddmPIguZ4ngRKZ7RVQyvEpmYri+6okG5FgdAKHSOMQQS52/22QXNCDlKZdgKlI7PyrC2obqFKzZQ==
+"@theme-ui/presets@0.2.42":
+  version "0.2.42"
+  resolved "https://registry.yarnpkg.com/@theme-ui/presets/-/presets-0.2.42.tgz#832cce4023f2bd0e66975a02228769e53dba0aad"
+  integrity sha512-PBf0sC7aAVtE/Jb3aU0v6uTez4n0XPj4UFwcks/1CQ6MNe2rkTJv9x+tx8Va6nNLUuYK0HaJxyRnt+HnGW026w==
   dependencies:
     "@theme-ui/preset-base" "^0.2.40"
     "@theme-ui/preset-bootstrap" "^0.2.40"
@@ -2289,7 +2289,7 @@
     "@theme-ui/preset-roboto" "^0.2.40"
     "@theme-ui/preset-swiss" "^0.2.40"
     "@theme-ui/preset-system" "^0.2.40"
-    "@theme-ui/preset-tailwind" "^0.2.40"
+    "@theme-ui/preset-tailwind" "^0.2.42"
     "@theme-ui/preset-tosh" "^0.2.40"
 
 "@theme-ui/prism@0.2.40":
@@ -11978,7 +11978,7 @@ react-dev-utils@^4.2.3:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-react-dom@16.9.0:
+react-dom@16.9.0, react-dom@^16.8.6:
   version "16.9.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.9.0.tgz#5e65527a5e26f22ae3701131bcccaee9fb0d3962"
   integrity sha512-YFT2rxO9hM70ewk9jq0y6sQk8cL02xm4+IzYBz75CQGlClQQ1Bxq0nhHF6OtSbit+AIahujJgb/CPRibFkMNJQ==
@@ -11987,16 +11987,6 @@ react-dom@16.9.0:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
     scheduler "^0.15.0"
-
-react-dom@^16.8.6:
-  version "16.8.6"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.6.tgz#71d6303f631e8b0097f56165ef608f051ff6e10f"
-  integrity sha512-1nL7PIq9LTL3fthPqwkvr2zY7phIPjYrT0jp4HjyEQrEROnw4dG41VVwi/wfoCneoleqrNX7iAD+pXebJZwrwA==
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.2"
-    scheduler "^0.13.6"
 
 react-error-overlay@^3.0.0:
   version "3.0.0"
@@ -12074,7 +12064,7 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
 
-react@16.9.0, react@^16.9.0:
+react@16.9.0, react@^16.8.0, react@^16.8.4, react@^16.8.6, react@^16.9.0:
   version "16.9.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.9.0.tgz#40ba2f9af13bc1a38d75dbf2f4359a5185c4f7aa"
   integrity sha512-+7LQnFBwkiw+BobzOF6N//BdoNw0ouwmSJTEm9cglOOmsg/TMiFHZLe2sEoN5M7LgJTj9oHH0gxklfnQe66S1w==
@@ -12082,16 +12072,6 @@ react@16.9.0, react@^16.9.0:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
-
-react@^16.8.0, react@^16.8.4, react@^16.8.6:
-  version "16.8.6"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.8.6.tgz#ad6c3a9614fd3a4e9ef51117f54d888da01f2bbe"
-  integrity sha512-pC0uMkhLaHm11ZSJULfOBqV4tIZkx87ZLvbbQYunNixAAvjnC+snJCg0XQXn9VIsttVsbZP/H/ewzgsd5fxKXw==
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.2"
-    scheduler "^0.13.6"
 
 read-chunk@^3.2.0:
   version "3.2.0"
