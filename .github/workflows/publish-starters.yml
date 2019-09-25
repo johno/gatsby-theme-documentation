@@ -3,7 +3,7 @@ name: Publish Starters
 on:
   push:
     branches:
-      -master
+      - master
 jobs:
   master:
     runs-on: ubuntu-latest
