@@ -66,7 +66,7 @@ exports.sourceNodes = ({ actions, schema }) => {
   )
 }
 
-exports.onCreateNode = ({ node, actions, getNode, createNodeId }) => {
+exports.onCreateNode = async ({ node, actions, getNode, createNodeId }) => {
   const { createNode, createParentChildLink, createRedirect } = actions
 
   const isReadme = name => /readme/i.test(name)
@@ -118,10 +118,11 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId }) => {
     const description = node.frontmatter.description
 
     const fieldData = { title, description, slug }
+    const mdxDocId = createNodeId(`${node.id} >>> Docs`)
 
-    createNode({
+    await createNode({
       ...fieldData,
-      id: createNodeId(`${node.id} >>> Docs`),
+      id: mdxDocId,
       parent: node.id,
       children: [],
       internal: {
@@ -135,7 +136,7 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId }) => {
       },
     })
 
-    createParentChildLink({ parent: fileNode, child: node })
+    createParentChildLink({ parent: node, child: getNode(mdxDocId) })
   }
 }
 
