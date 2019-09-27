@@ -27,13 +27,13 @@ export default ({ children }) => {
         <Main>
           <Container py={0} px={3}>
             <div
+              ref={nav}
               sx={{
                 display: ['block', 'flex'],
                 mx: -3,
               }}
             >
               <Sidenav
-                ref={nav}
                 open={menuOpen}
                 sx={{ display: [null, 'block'] }}
                 onFocus={() => setMenuOpen(true)}
