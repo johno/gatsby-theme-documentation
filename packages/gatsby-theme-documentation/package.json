@@ -16,12 +16,12 @@
     "@theme-ui/presets": "0.2.42",
     "@theme-ui/prism": "0.2.40",
     "@theme-ui/sidenav": "0.2.43",
-    "gatsby-plugin-mdx": "1.0.46",
+    "gatsby-plugin-mdx": "1.0.47",
     "gatsby-plugin-meta-redirect": "1.1.1",
     "gatsby-plugin-react-helmet": "3.1.10",
     "gatsby-plugin-redirects": "1.0.0",
     "gatsby-plugin-theme-ui": "0.2.43",
-    "gatsby-source-filesystem": "2.1.28",
+    "gatsby-source-filesystem": "2.1.29",
     "is-absolute-url": "3.0.3",
     "react-helmet": "5.2.1",
     "remark-emoji": "2.0.2",
@@ -29,7 +29,7 @@
     "theme-ui": "0.2.43"
   },
   "devDependencies": {
-    "gatsby": "2.15.28",
+    "gatsby": "2.15.29",
     "react": "16.9.0",
     "react-dom": "16.9.0"
   },
