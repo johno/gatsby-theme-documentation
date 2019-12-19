@@ -2060,10 +2060,10 @@
   dependencies:
     prism-react-renderer "^1.0.2"
 
-"@theme-ui/sidenav@0.2.52":
-  version "0.2.52"
-  resolved "https://registry.yarnpkg.com/@theme-ui/sidenav/-/sidenav-0.2.52.tgz#527b79460855fd3268864c78a2bd388c35d0d35e"
-  integrity sha512-K98m/iRNRNuy9kvMWRArLF5VgyrFtRLWOuqgV6eyoYtNHl/zJDqAR1x/GaGpb50I7bphfd9q1PyB5Sxc5kUTgQ==
+"@theme-ui/sidenav@0.2.53":
+  version "0.2.53"
+  resolved "https://registry.yarnpkg.com/@theme-ui/sidenav/-/sidenav-0.2.53.tgz#608edd009761975f1d883df9a4cbc27e765b79f5"
+  integrity sha512-HHTIoutw0GA+STFE9uCBonIljoz533rGOsZ+EldtNK7jrc8Ty+BYTC3W5OQ6r6Nls8OX7hcqsmtU6LNaMd3p7g==
   dependencies:
     "@emotion/core" "^10.0.14"
     "@mdx-js/react" "^1.0.21"
