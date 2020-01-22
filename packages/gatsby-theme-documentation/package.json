@@ -15,7 +15,7 @@
     "@mdx-js/react": "1.5.5",
     "@theme-ui/presets": "0.3.0",
     "@theme-ui/prism": "0.2.50",
-    "@theme-ui/sidenav": "0.2.53",
+    "@theme-ui/sidenav": "0.3.0",
     "gatsby-plugin-mdx": "1.0.47",
     "gatsby-plugin-meta-redirect": "1.1.1",
     "gatsby-plugin-react-helmet": "3.1.10",
