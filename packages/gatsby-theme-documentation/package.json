@@ -10,7 +10,7 @@
     "gatsby-plugin"
   ],
   "dependencies": {
-    "@emotion/core": "10.0.28",
+    "@emotion/core": "10.0.34",
     "@mdx-js/mdx": "1.6.16",
     "@mdx-js/react": "1.6.16",
     "@theme-ui/presets": "0.3.0",
