@@ -19,12 +19,12 @@
   "dependencies": {
     "gatsby": "2.15.29",
     "lerna": "3.22.1",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react": "16.14.0",
+    "react-dom": "16.14.0"
   },
   "resolutions": {
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react": "16.14.0",
+    "react-dom": "16.14.0"
 
   }
 }
