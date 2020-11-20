@@ -13,7 +13,7 @@
     "@emotion/core": "10.1.1",
     "@mdx-js/mdx": "1.6.21",
     "@mdx-js/react": "1.6.21",
-    "@theme-ui/presets": "0.3.0",
+    "@theme-ui/presets": "0.3.4",
     "@theme-ui/prism": "0.3.0",
     "@theme-ui/sidenav": "0.3.3",
     "gatsby-plugin-mdx": "1.0.47",
