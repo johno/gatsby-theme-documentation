@@ -16,7 +16,7 @@
     "@theme-ui/presets": "0.8.4",
     "@theme-ui/prism": "0.3.5",
     "@theme-ui/sidenav": "0.8.4",
-    "gatsby-plugin-mdx": "2.5.0",
+    "gatsby-plugin-mdx": "2.5.1",
     "gatsby-plugin-meta-redirect": "1.1.1",
     "gatsby-plugin-react-helmet": "4.5.0",
     "gatsby-plugin-redirects": "1.0.0",
@@ -29,7 +29,7 @@
     "theme-ui": "0.2.52"
   },
   "devDependencies": {
-    "gatsby": "3.5.0",
+    "gatsby": "3.5.1",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
