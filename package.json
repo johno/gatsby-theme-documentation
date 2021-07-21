@@ -17,7 +17,7 @@
     "examples/*"
   ],
   "dependencies": {
-    "gatsby": "3.9.1",
+    "gatsby": "3.10.1",
     "lerna": "4.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
