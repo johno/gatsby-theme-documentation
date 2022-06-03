@@ -16,7 +16,7 @@
     "@theme-ui/presets": "0.9.1",
     "@theme-ui/prism": "0.3.5",
     "@theme-ui/sidenav": "0.9.1",
-    "gatsby-plugin-mdx": "2.14.0",
+    "gatsby-plugin-mdx": "2.14.1",
     "gatsby-plugin-meta-redirect": "1.1.1",
     "gatsby-plugin-react-helmet": "4.14.0",
     "gatsby-plugin-redirects": "1.0.0",
