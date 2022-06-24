@@ -11,8 +11,8 @@
   ],
   "dependencies": {
     "@emotion/core": "10.3.1",
-    "@mdx-js/mdx": "1.6.22",
-    "@mdx-js/react": "1.6.22",
+    "@mdx-js/mdx": "2.1.2",
+    "@mdx-js/react": "2.1.2",
     "@theme-ui/presets": "0.9.1",
     "@theme-ui/prism": "0.3.5",
     "@theme-ui/sidenav": "0.9.1",
