@@ -24,7 +24,7 @@
     "gatsby-source-filesystem": "3.14.0",
     "is-absolute-url": "4.0.1",
     "react-helmet": "6.1.0",
-    "remark-emoji": "2.2.0",
+    "remark-emoji": "3.0.2",
     "remark-slug": "6.1.0",
     "theme-ui": "0.2.52"
   },
