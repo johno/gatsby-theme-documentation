@@ -1,0 +1,7 @@
+{
+  "enabled": false,
+  "automerge": true,
+  "extends": [
+    "config:base"
+  ]
+}
